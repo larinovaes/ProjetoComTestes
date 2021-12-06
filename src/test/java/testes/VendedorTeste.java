@@ -13,11 +13,13 @@ public class VendedorTeste {
     @Test
     public void testarCadastrarVendedor() {
         Vendedor resultado = ServicoVendedor.cadastrarVendedor("joao", "8236475326","joao@gamcil.com");
+        Assert.assertNotNull(resultado);
     }
 
     @Test
     public void testarExibirVendedores() {
        List<Vendedor> resultado = ServicoVendedor.exibirVendedores();
+       Assert.assertNotNull(resultado);
     }
 
     @Test

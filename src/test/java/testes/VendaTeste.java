@@ -19,11 +19,14 @@ public class VendaTeste {
        ServicoCliente.cadastrarCliente("Joao","782.118.236-54", "joao@gamil.com")
        , ServicoVendedor.cadastrarVendedor("Miguel", "293.275.439-84","miguel@gmail.com")
       , "12/03/2018", 290);
+
+        Assert.assertNotNull(resultado);
     }
 
     @Test
     public void testarExibirVendas() {
         List<Venda> resultado = ServicoVenda.exibirVendas();
+        Assert.assertNotNull(resultado);
     }
 
     @Test
