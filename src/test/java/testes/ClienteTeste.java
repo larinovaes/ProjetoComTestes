@@ -20,6 +20,7 @@ public class ClienteTeste {
     @Test
     public void testarCadastroDeCliente() {
         Cliente resultado = ServicoCliente.cadastrarCliente("joao", "73256346", "Miguel@miguel.com");
+        Assert.assertNotNull(resultado);
     }
 
     @Test
@@ -32,6 +33,7 @@ public class ClienteTeste {
   @Test
   public void testarexibirCliente() {
     List<Cliente> clientes = ServicoCliente.exibirClientes();
+    Assert.assertNotNull(clientes);
   }
 
     @Test
